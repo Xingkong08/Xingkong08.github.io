@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>备用站</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="videolist.js"></script>
+</head>
+<body class="home">
+<p style="color: dodgerblue">点击标题展开视频列表</p>
+<div class="title" onclick="showList('xzzl')">《玄奘之路》</div>
+<div id="xzzl"></div>
+<div class="title" onclick="showList('dgj')">《佛说稻芉经》</div>
+<div id="dgj"></div>
+<div class="title" onclick="showList('amtj')">《阿弥陀经》</div>
+<div id="amtj"></div>
+<div class="title" onclick="showList('wlsj')">《无量寿经》</div>
+<div id="wlsj"></div>
+<div class="title" onclick="showList('ftzg')">《佛陀》(国语中字)</div>
+<div id="ftzg"></div>
+<div class="title" onclick="showList('lfsx')">《了凡四训讲解》</div>
+<div id="lfsx"></div>
+<div class="title" onclick="showList('lfmv')">《了凡四训电视剧》</div>
+<div id="lfmv"></div>
+
+
+<script type="text/javascript">
+    var wlsjList, amtjList, dgjList = [];
+
+    window.onload = function () {
+        initList();
+    };
+
+
+    function initList() {
+        wlsjList = getVedioList(4790, 4809, "《无量寿经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=310&videoid=", "");
+        amtjList = getVedioList(4740, 4747, "《阿弥陀经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=302&videoid=", "");
+        dgjList = getVedioList(4074, 4078, "佛说稻芉经", "http://www.dahangfashi.com/newsshow.asp?classid=6&id=265&videoid=", "");
+        ftzgList = getFtzgList();
+        creatList('xzzl', xzzlList);
+        creatList('dgj', dgjList);
+        creatList('amtj', amtjList);
+        creatList('wlsj', wlsjList);
+        creatList('ftzg', ftzgList);
+        creatList('lfsx', lfsxList);
+        creatList('lfmv', lfmvList);
+    }
+
+
+    //根据起始创建视频列表
+    function getVedioList(start, end, title, url, urlend) {
+        let outList = [];
+        for (let i = start; i <= end; i++) {
+            let furl = url + i + urlend;
+            let j = i - start + 1;
+            if (j < 10) {
+                j = "0" + j
+            }
+            let name = title + j
+            outList.push({
+                url: furl,
+                name: name
+            })
+        }
+        return outList;
+    }
+
+
+    //根据列表创建视频列表
+    function creatList(obj, list) {
+        var ronqi = document.getElementById(obj);
+        for (let i = 0; i < list.length; i++) {
+            var va = document.createElement('a');
+            va.setAttribute('href', list[i].url);
+            va.innerText = list[i].name;
+            va.setAttribute('class', obj + " hide")
+            ronqi.appendChild(va);
+        }
+    }
+
+    //创建佛陀传列表
+    function getFtzgList() {
+        let list = [];
+        for (let i = 0; i < this.ftzgList.length; i++) {
+            let index = "" + (i * 2 + 1) + "-" + (i * 2 + 2);
+            let cope = {
+                key: "https://www.56.com/w11/play_album-aid-14492315_vid-" + this.ftzgList[i] + ".html",
+                name: "《佛陀》第" + index + "集"
+            };
+            list.push(cope)
+        }
+        return list;
+    }
+
+    //展示列表 传入class的名字
+    function showList(name) {
+        var list = document.getElementsByClassName(name);
+        var status = list[0].getAttribute('class');
+        var change = containStr(status, 'show') ? ' hide' : ' show'
+        for (let i = 0; i < list.length; i++) {
+            list[i].setAttribute('class', name + change);
+        }
+    }
+
+    //判断obj是否包含字符串str
+    function containStr(obj, str) {
+        return obj.indexOf(str) != -1
+    }
+
+</script>
+</body>
+</html>

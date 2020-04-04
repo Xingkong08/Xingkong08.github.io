@@ -1,0 +1,71 @@
+var xzzlList = [
+    {url: "https://www.mgtv.com/b/9329/4581703.html", name: "《玄奘之路》01"},
+    {url: "https://www.mgtv.com/b/9329/4581704.html", name: "《玄奘之路》02"},
+    {url: "https://www.mgtv.com/b/9329/4581705.html", name: "《玄奘之路》03"},
+    {url: "https://www.mgtv.com/b/9329/4581706.html", name: "《玄奘之路》04"},
+    {url: "https://www.mgtv.com/b/9329/4581707.html", name: "《玄奘之路》05"},
+    {url: "https://www.mgtv.com/b/9329/4581725.html", name: "《玄奘之路》06"},
+    {url: "https://www.mgtv.com/b/9329/4581726.html", name: "《玄奘之路》07"},
+    {url: "https://www.mgtv.com/b/9329/4581730.html", name: "《玄奘之路》08"},
+    {url: "https://www.mgtv.com/b/9329/4581743.html", name: "《玄奘之路》09"},
+    {url: "https://www.mgtv.com/b/9329/4581744.html", name: "《玄奘之路》10"},
+    {url: "https://www.mgtv.com/b/9329/4581745.html", name: "《玄奘之路》11"},
+    {url: "https://www.mgtv.com/b/9329/4581746.html", name: "《玄奘之路》12"}
+];
+
+var lfsxList = [
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0Mjk2NDU0LnNodG1s.html", name: "了凡四训_讲解01"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0Mjk2NDUzLnNodG1s.html", name: "了凡四训_讲解02"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0Mjk2NDUyLnNodG1s.html", name: "了凡四训_讲解03"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0Mjk4NTg5LnNodG1s.html", name: "了凡四训_讲解04"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0Mjk4OTI2LnNodG1s.html", name: "了凡四训_讲解05"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzAzNDU3LnNodG1s.html", name: "了凡四训_讲解06"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzAzNDU2LnNodG1s.html", name: "了凡四训_讲解07"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzAzNDU4LnNodG1s.html", name: "了凡四训_讲解08"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzI4OTI4LnNodG1s.html", name: "了凡四训_讲解09"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzA1NDA4LnNodG1s.html", name: "了凡四训_讲解10"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzE3NDY0LnNodG1s.html", name: "了凡四训_讲解11"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzA4MTIyLnNodG1s.html", name: "了凡四训_讲解12"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzA4MjMzLnNodG1s.html", name: "了凡四训_讲解13"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzA4MjQ2LnNodG1s.html", name: "了凡四训_讲解14"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzExNzEyLnNodG1s.html", name: "了凡四训_讲解15"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzE3NDY1LnNodG1s.html", name: "了凡四训_讲解16"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzIxMzczLnNodG1s.html", name: "了凡四训_讲解17"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzIzMjM4LnNodG1s.html", name: "了凡四训_讲解18"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzI0OTI4LnNodG1s.html", name: "了凡四训_讲解19"},
+    {url: "https://tv.sohu.com/v/dXMvMTQ1MzU2MzAyLzU0MzE3NDY2LnNodG1s.html", name: "了凡四训_讲解20"},
+    {url: "https://www.iqiyi.com/w_19rtxnw859.html", name: "了凡四训_电影"},
+];
+
+var lfmvList = [
+    {url: "https://v.youku.com/v_show/id_XMjI5ODMyNDA=.html", name: "了凡四训电视剧01"},
+    {url: "https://v.youku.com/v_show/id_XMjI5ODI4MjA=.html", name: "了凡四训电视剧02"},
+    {url: "https://v.youku.com/v_show/id_XMjI5ODc1NjA=.html", name: "了凡四训电视剧03"},
+    {url: "https://v.youku.com/v_show/id_XMjI5ODc2MjA=.html", name: "了凡四训电视剧04"},
+    {url: "https://v.youku.com/v_show/id_XMjI4MzI2MjQ=.html", name: "了凡四训电视剧05"},
+    {url: "https://v.youku.com/v_show/id_XMjI5Mjg1NjQ=.html", name: "了凡四训电视剧06"},
+    {url: "https://v.youku.com/v_show/id_XMjI5MzE5MDg=.html", name: "了凡四训电视剧07"},
+    {url: "https://v.youku.com/v_show/id_XMjI5MzM5NDg=.html", name: "了凡四训电视剧08"},
+    {url: "https://v.youku.com/v_show/id_XMjI5MzI3MzY=.html", name: "了凡四训电视剧09"},
+    {url: "https://v.youku.com/v_show/id_XMjI5MzQ3NzY=.html", name: "了凡四训电视剧10"},
+    {url: "https://v.youku.com/v_show/id_XMjI5Mzg3NDA=.html", name: "了凡四训电视剧11"},
+    {url: "https://v.youku.com/v_show/id_XMjI5Mzk5ODg=.html", name: "了凡四训电视剧12"},
+    {url: "https://v.youku.com/v_show/id_XMjI5Mzk4MzI=.html", name: "了凡四训电视剧13"},
+    {url: "https://v.youku.com/v_show/id_XMjI5NDIzMDg=.html", name: "了凡四训电视剧14"},
+    {url: "https://v.youku.com/v_show/id_XMjI5NDI3NDA=.html", name: "了凡四训电视剧15"},
+    {url: "https://v.youku.com/v_show/id_XMjI5NzIzNjg=.html", name: "了凡四训电视剧16"},
+    {url: "https://v.youku.com/v_show/id_XMTEwMjU0NjE2.html", name: "了凡四训电视剧17"},
+    {url: "https://v.youku.com/v_show/id_XMTkyMDg2OTc2.html", name: "了凡四训电视剧18"},
+    {url: "https://v.youku.com/v_show/id_XMTEwMjU1MjEy.html", name: "了凡四训电视剧19"},
+    {url: "https://v.youku.com/v_show/id_XMTkyMDI4MDM2.html", name: "了凡四训电视剧20"},
+    {url: "https://v.youku.com/v_show/id_XMTkyMDE4Njcy.html", name: "了凡四训电视剧21"},
+    {url: "https://v.youku.com/v_show/id_XMjI5Nzc2ODA=.html", name: "了凡四训电视剧22"},
+    {url: "https://v.youku.com/v_show/id_XMTkxOTQxMjcy.html", name: "了凡四训电视剧23"}
+];
+
+
+var ftzgList = ["MTUwOTU3MTM1", "MTUwOTU3MzM3", "MTUwOTU3NDg0", "MTUwOTU3NzAz", "MTUwOTU3ODkw", "MTUwOTU4MDA4",
+    "MTUwOTU4MDQ3", "MTUwOTU4MTI5", "MTUwOTU4MTc3", "MTUwOTU4MTc5", "MTUwOTU4NDg4", "MTUwOTU4NDky",
+    "MTUwOTU4NTA5", "MTUwOTU4Njgx", "MTUwOTU4NzI2", "MTUwOTU5Mzg4", "MTUwOTU5NTQy", "MTUwOTU5NTQ0",
+    "MTUwOTc2NDgx", "MTUwOTc2NTE4", "MTUwOTc2NTIz", "MTUwOTc2NTY4", "MTUwOTc2NTg3", "MTUwOTc2NzQ0",
+    "MTUxMDM5MzA3", "MTUwOTc2ODM0", "MTUwOTc2ODY2"];
