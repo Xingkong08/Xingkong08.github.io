@@ -4,7 +4,7 @@ var control = "<div id=\"control\">" +
     "<div class='btn' onclick=\"zoomIn()\">字体放大</div>" +
     "<div class='btn' onclick=\"zoomOut()\">字体缩小</div>" +
     "<div class='btn' onclick=\"window.location.href='./index.html'\">回到目录</div>" +
-    "<div class='btn' style='float: left' onclick=\"window.location.href='http://git.4nianchu.com'\">回到主页</div>" +
+    "<div class='btn' style='float: left' onclick=\"window.location.href='http://git.4nianchu.com/jue/'\">回到主页</div>" +
     "</div>";
 
 window.onload = function () {
