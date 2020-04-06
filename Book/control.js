@@ -1,3 +1,13 @@
+var _hmt = _hmt || [];
+
+
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?e737faa4cd0840b855973e2ca06e5c6b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
 var font = {size: 1.0};
 
 var control = "<div id=\"control\">" +
