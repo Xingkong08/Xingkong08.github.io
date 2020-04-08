@@ -13,12 +13,12 @@
 }
 
 .btn {
-	float: right;
-	display: inline-block;
-	color: #2368e7;
-	font-size: large;
-	font-weight: bold;
-	margin: 0 10px;
+    float: right;
+    display: inline-block;
+    color: #2368e7;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 3%;
 }
 
 .btn:hover {
