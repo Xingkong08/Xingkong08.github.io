@@ -8,7 +8,7 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(hm, s);
 })();
 
-var font = {size: 1.0};
+var font = {size: 1.1};
 
 var control = "<div id=\"control\">" +
     "<div class='btn' onclick=\"zoomIn()\">字体放大</div>" +
