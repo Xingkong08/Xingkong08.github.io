@@ -88,10 +88,11 @@ h5.fiveTitle, p.fiveTitle {
 
 /*六级标题*/
 h6.sixTitle, p.sixTitle {
-    font-size: 0.85em;
+    font-size: 1.1em;
     line-height: 1.3em;
     text-align: left;
     text-indent: 0;
+    font-weight: 800;
     margin: 3pt 0;
     /* letter-spacing:auto; */
 }
