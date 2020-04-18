@@ -88,11 +88,17 @@ p.fifthTitle {
 }
 
 /*注释*/
-span.note, p.note {
+span.note {
     font-size: 0.85em;
     text-align: justify;
     line-height: 1.5em;
     color: #a25400;
+}
+
+p.note {
+    font-size: 0.85em;
+    text-align: justify;
+    line-height: 1.3em;
 }
 
 /*诗词*/
