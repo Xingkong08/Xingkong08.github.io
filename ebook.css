@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+
+#control {
+    height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    line-height: 40px;
+    background-color: whitesmoke;
+    border-bottom: solid 1px gainsboro;
+}
+
+.btn {
+    float: right;
+    display: inline-block;
+    color: #2368e7;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 3%;
+}
+
+.btn:hover {
+    cursor: pointer
+}
+
+
+/* CSS Document */
+body {
+    font-family: 宋体;
+    font-size: 100%;
+    padding: 10px 20px 50px 20px;
+    font-size: 1.100em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*一级标题*/
+p.firstTitle {
+    font-size: 2.0em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/*二级标题*/
+p.secondTitle {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/*三级标题*/
+p.thirdTitle {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/*四级标题*/
+p.fourthTitle {
+    font-size: 1.4em;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/*五级标题*/
+p.fifthTitle {
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.1em;
+    text-indent: 1em;
+}
+
+/*正文内容*/
+.bodyContent {
+    font-size: 1.0em;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/*注释*/
+span.note, p.note {
+    font-size: 0.85em;
+    text-align: justify;
+    line-height: 1.5em;
+    color: #a25400;
+}
+
+/*诗词*/
+.bodyPoem {
+    color: #008040;
+    font-size: 1.0em;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+/*诗词靠左*/
+.leftPoem {
+    color: #008040;
+    font-size: 1.0em;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 0.8em;
+}
+
+/*诗词中间空格*/
+span.empty {
+    padding: 0 1em;
+}
+
+/*正文作者*/
+.rightAuther {
+    font-size: 1.0em;
+    text-align: right;
+    line-height: 0.8em;
+}
+
+/*正文内容 带有首字效果*/
+.dyFirstContent {
+    font-size: 1.0em;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/*首行文字下沉效果*/
+.dyFirstContent:first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c36500;
+}
+
+
+/*正文图表*/
+.bodyPic {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0%;
+}
+
+
+/*数字上标*/
+span.super {
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+/*数字下标*/
+span.sub {
+    font-size: 0.7em;
+    vertical-align: sub;
+}
+
+p.annotation {
+    margin: 20pt 0;
+    border-bottom: black 1px solid;
+}
+
+
+.color {
+    color: #a25400;
+}
+
+/*其它缩进12像素*/
+.indentS {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-indent: 0.5em;
+    margin: 5pt 0;
+}
+
+/*其它缩进36像素*/
+.indentT {
+    text-indent: 2em;
+    margin: 5pt 0;
+}
+
+/*其它缩进60像素*/
+.indentF {
+    text-indent: 4em;
+    margin: 5pt 0;
+}
+
+/*正文中生僻字图片代替*/
+.rareFont {
+    width: 0.8em;
+}
+
+
+
