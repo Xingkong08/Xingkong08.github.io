@@ -19,6 +19,7 @@
 </head>
 <body class="home">
 <a href="./Book/沙门果经/">沙门果经</a>
+<a href="http://git.4nianchu.com/dist/#/Reader">更多书籍查阅入口</a>
 <p style="color: dodgerblue">点击标题展开视频列表</p>
 <div class="title" onclick="showList('xzzl')">《玄奘之路》</div>
 <div id="xzzl"></div>
@@ -28,6 +29,8 @@
 <div id="amtj"></div>
 <div class="title" onclick="showList('wlsj')">《无量寿经》</div>
 <div id="wlsj"></div>
+<div class="title" onclick="showList('gwlsj')">《观无量寿经》</div>
+<div id="gwlsj"></div>
 <div class="title" onclick="showList('ftzg')">《佛陀》(国语中字)</div>
 <div id="ftzg"></div>
 <a class="ftzg hide" href="https://pan.baidu.com/s/13kl0iSot6nSenWzQ96dxhw">佛陀_原音中字_提取码：6h3h</a>
@@ -38,7 +41,7 @@
 
 
 <script type="text/javascript">
-    var wlsjList, amtjList, dgjList = [];
+    var wlsjList, amtjList, dgjList,gwlsjList = [];
 
     window.onload = function () {
         initList();
@@ -49,6 +52,7 @@
         wlsjList = getVedioList(4790, 4809, "《无量寿经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=310&videoid=", "");
         amtjList = getVedioList(4740, 4747, "《阿弥陀经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=302&videoid=", "");
         dgjList = getVedioList(4074, 4078, "佛说稻芉经", "http://www.dahangfashi.com/newsshow.asp?classid=6&id=265&videoid=", "");
+        gwlsjList = getVedioList(4752, 4764, "《观无量寿经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=304&videoid=", "");
         ftzgList = getFtzgList();
         creatList('xzzl', xzzlList);
         creatList('dgj', dgjList);
@@ -57,6 +61,7 @@
         creatList('ftzg', ftzgList);
         creatList('lfsx', lfsxList);
         creatList('lfmv', lfmvList);
+        creatList('gwlsj', gwlsjList);
     }
 
 
