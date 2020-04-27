@@ -38,29 +38,26 @@ var lfsxList = [
 ];
 
 var lfmvList = [
-    {url: "https://v.youku.com/v_show/id_XMjI5ODMyNDA=.html", name: "了凡四训电视剧01"},
-    {url: "https://v.youku.com/v_show/id_XMjI5ODI4MjA=.html", name: "了凡四训电视剧02"},
-    {url: "https://v.youku.com/v_show/id_XMjI5ODc1NjA=.html", name: "了凡四训电视剧03"},
-    {url: "https://v.youku.com/v_show/id_XMjI5ODc2MjA=.html", name: "了凡四训电视剧04"},
-    {url: "https://v.youku.com/v_show/id_XMjI4MzI2MjQ=.html", name: "了凡四训电视剧05"},
-    {url: "https://v.youku.com/v_show/id_XMjI5Mjg1NjQ=.html", name: "了凡四训电视剧06"},
-    {url: "https://v.youku.com/v_show/id_XMjI5MzE5MDg=.html", name: "了凡四训电视剧07"},
-    {url: "https://v.youku.com/v_show/id_XMjI5MzM5NDg=.html", name: "了凡四训电视剧08"},
-    {url: "https://v.youku.com/v_show/id_XMjI5MzI3MzY=.html", name: "了凡四训电视剧09"},
-    {url: "https://v.youku.com/v_show/id_XMjI5MzQ3NzY=.html", name: "了凡四训电视剧10"},
-    {url: "https://v.youku.com/v_show/id_XMjI5Mzg3NDA=.html", name: "了凡四训电视剧11"},
-    {url: "https://v.youku.com/v_show/id_XMjI5Mzk5ODg=.html", name: "了凡四训电视剧12"},
-    {url: "https://v.youku.com/v_show/id_XMjI5Mzk4MzI=.html", name: "了凡四训电视剧13"},
-    {url: "https://v.youku.com/v_show/id_XMjI5NDIzMDg=.html", name: "了凡四训电视剧14"},
-    {url: "https://v.youku.com/v_show/id_XMjI5NDI3NDA=.html", name: "了凡四训电视剧15"},
-    {url: "https://v.youku.com/v_show/id_XMjI5NzIzNjg=.html", name: "了凡四训电视剧16"},
-    {url: "https://v.youku.com/v_show/id_XMTEwMjU0NjE2.html", name: "了凡四训电视剧17"},
-    {url: "https://v.youku.com/v_show/id_XMTkyMDg2OTc2.html", name: "了凡四训电视剧18"},
-    {url: "https://v.youku.com/v_show/id_XMTEwMjU1MjEy.html", name: "了凡四训电视剧19"},
-    {url: "https://v.youku.com/v_show/id_XMTkyMDI4MDM2.html", name: "了凡四训电视剧20"},
-    {url: "https://v.youku.com/v_show/id_XMTkyMDE4Njcy.html", name: "了凡四训电视剧21"},
-    {url: "https://v.youku.com/v_show/id_XMjI5Nzc2ODA=.html", name: "了凡四训电视剧22"},
-    {url: "https://v.youku.com/v_show/id_XMTkxOTQxMjcy.html", name: "了凡四训电视剧23"}
+    {url: "http://v.pptv.com/show/5UQppg505CKFA2s.html", name: "了凡四训电视剧01"},
+    {url: "http://v.pptv.com/show/cdO0MxpSS4nsatI.html", name: "了凡四训电视剧02"},
+    {url: "http://v.pptv.com/show/d9G2NRxQSYfqaNA.html", name: "了凡四训电视剧03"},
+    {url: "http://v.pptv.com/show/6UgtqpPLsvBT0Tk.html", name: "了凡四训电视剧04"},
+    {url: "http://v.pptv.com/show/70orqJHNtPJV0zs.html", name: "了凡四训电视剧05"},
+    {url: "http://v.pptv.com/show/e93CQShEPXveXMQ.html", name: "了凡四训电视剧06"},
+    {url: "http://v.pptv.com/show/g6WKCfBsVZP2dNw.html", name: "了凡四训电视剧07"},
+    {url: "http://v.pptv.com/show/ia62SEfh0basOjPQ.html", name: "了凡四训电视剧08"},
+    {url: "http://v.pptv.com/show/8VA1spvTyghr6VE.html", name: "了凡四训电视剧09"},
+    {url: "http://v.pptv.com/show/ibVg9uqO7ouBDwSk.html", name: "了凡四训电视剧10"},
+    {url: "http://v.pptv.com/show/icVxBvqe3ruxPzTU.html", name: "了凡四训电视剧11"},
+    {url: "http://v.pptv.com/show/ASMEg2oCibzmcGoI.html", name: "了凡四训电视剧12"},
+    {url: "http://v.pptv.com/show/FzEWlXzw6SeKCHA.html", name: "了凡四训电视剧13"},
+    {url: "http://v.pptv.com/show/MxX6eWD85SOGBGw.html", name: "了凡四训电视剧14"},
+    {url: "http://v.pptv.com/show/NxH2dVwQCUeqKJA.html", name: "了凡四训电视剧15"},
+    {url: "http://v.pptv.com/show/TibnOTTQoEUibyMJg.html", name: "了凡四训电视剧16"},
+    {url: "http://v.pptv.com/show/XffYVz4uF1W4Np4.html", name: "了凡四训电视剧17"},
+    {url: "http://v.pptv.com/show/XicneXUQYATibiaIIg.html", name: "了凡四训电视剧18"},
+    {url: "http://v.pptv.com/show/k7WaGQBcRYPmZMw.html", name: "了凡四训电视剧19"},
+    {url: "http://v.pptv.com/show/ZbibgHwZWT43wbtY.html", name: "了凡四训电视剧20"}
 ];
 
 var bnxyList = [
@@ -84,7 +81,6 @@ var bnxyList = [
     {url: "http://v.pptv.com/show/ic3kFgvhVT43wbtY.html?", name: "百年虚云18"},
     {url: "http://v.pptv.com/show/AAM7uBJrUYicycNg.html?", name: "百年虚云19"},
     {url: "http://v.pptv.com/show/AQI8uxFsVpT3dd0.html?", name: "百年虚云20"}
-
 ];
 
 var ftzgList = ["MTUwOTU3MTM1", "MTUwOTU3MzM3", "MTUwOTU3NDg0", "MTUwOTU3NzAz", "MTUwOTU3ODkw", "MTUwOTU4MDA4",
