@@ -63,6 +63,29 @@ var lfmvList = [
     {url: "https://v.youku.com/v_show/id_XMTkxOTQxMjcy.html", name: "了凡四训电视剧23"}
 ];
 
+var bnxyList = [
+    {url: "http://v.pptv.com/show/5mAenfdGPHrdW8M.html?", name: "百年虚云01"},
+    {url: "http://v.pptv.com/show/52EdmvBNN3XYVr4.html?", name: "百年虚云02"},
+    {url: "http://v.pptv.com/show/6WsTkOpjWZf6eOA.html?", name: "百年虚云03"},
+    {url: "http://v.pptv.com/show/620ZluxhW5n8euI.html?", name: "百年虚云04"},
+    {url: "http://v.pptv.com/show/72kVkuhlX50AfuY.html?", name: "百年虚云05"},
+    {url: "http://v.pptv.com/show/83URjgR5Y6EEguo.html?", name: "百年虚云06"},
+    {url: "http://v.pptv.com/show/9G4Ylib1gWpj7eeE.html?", name: "百年虚云07"},
+    {url: "http://v.pptv.com/show/9W8XlO5fRYPmZMw.html?", name: "百年虚云08"},
+    {url: "http://v.pptv.com/show/9nAOjQd2bKoNiaicM.html?", name: "百年虚云09"},
+    {url: "http://v.pptv.com/show/93ENiagB9Z6UIhu4.html?", name: "百年虚云10"},
+    {url: "http://v.pptv.com/show/ibHoEgiclUTozvbdU.html?", name: "百年虚云11"},
+    {url: "http://v.pptv.com/show/ibXsDgPpTSYfqaNA.html?", name: "百年虚云12"},
+    {url: "http://v.pptv.com/show/ibnwKiaQN6YJ4Bfibc.html?", name: "百年虚云13"},
+    {url: "http://v.pptv.com/show/ib30JhvxRS4nsatI.html?", name: "百年虚云14"},
+    {url: "http://v.pptv.com/show/icHYQjwV4YqADgek.html?", name: "百年虚云15"},
+    {url: "http://v.pptv.com/show/icXcPjAZ3basOjPQ.html?", name: "百年虚云16"},
+    {url: "http://v.pptv.com/show/icngGhf9ONHLVU7s.html?", name: "百年虚云17"},
+    {url: "http://v.pptv.com/show/ic3kFgvhVT43wbtY.html?", name: "百年虚云18"},
+    {url: "http://v.pptv.com/show/AAM7uBJrUYicycNg.html?", name: "百年虚云19"},
+    {url: "http://v.pptv.com/show/AQI8uxFsVpT3dd0.html?", name: "百年虚云20"}
+
+];
 
 var ftzgList = ["MTUwOTU3MTM1", "MTUwOTU3MzM3", "MTUwOTU3NDg0", "MTUwOTU3NzAz", "MTUwOTU3ODkw", "MTUwOTU4MDA4",
     "MTUwOTU4MDQ3", "MTUwOTU4MTI5", "MTUwOTU4MTc3", "MTUwOTU4MTc5", "MTUwOTU4NDg4", "MTUwOTU4NDky",
