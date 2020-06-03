@@ -7,7 +7,7 @@
     <title>长夜安隐</title>
     <script>
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?e737faa4cd0840b855973e2ca06e5c6b";
             var s = document.getElementsByTagName("script")[0];
@@ -15,6 +15,7 @@
         })();
     </script>
     <link rel="stylesheet" href="main.css">
+    <script src="jquery-1.12.0.js"></script>
     <script src="videolist.js"></script>
 </head>
 <body class="home">
@@ -35,8 +36,6 @@
 <div id="ftzg">
     <a class="ftzg hide" href="https://pan.baidu.com/s/13kl0iSot6nSenWzQ96dxhw">佛陀_原音中字_提取码：6h3h</a>
 </div>
-<!--<div class="title" onclick="showList('lfsx')">《了凡四训讲解》</div>-->
-<!--<div id="lfsx"></div>-->
 <div class="title" onclick="showList('lfmv')">《了凡四训电视剧》</div>
 <div id="lfmv"></div>
 
@@ -46,7 +45,45 @@
 
     window.onload = function () {
         initList();
+        getVideo();
+
     };
+
+
+    function getVideo() {
+
+        let data = new FormData();
+        data.append("code", "xzzl");
+
+        $.ajax({
+            type: 'GET',
+            headers: {},
+            contentType: "multipart/form-data", //必须有
+            url: "http://127.0.0.1:7060/video/find",
+            data: data,
+            success: function (result) {
+                console.log(result)
+            }
+        });
+
+    }
+
+
+    function saveVideo(data) {
+        console.log(data)
+        data = JSON.stringify(data);
+        $.ajax({
+            type: 'POST',
+            headers: {},
+            contentType: "application/json", //必须有
+            url: "http://127.0.0.1:7060/video/save",
+            data: data,
+            success: function (result) {
+                console.log(result)
+            }
+        });
+
+    }
 
 
     function initList() {
@@ -61,6 +98,8 @@
         creatList('ftzg', ftzgList);
         // creatList('lfsx', lfsxList);
         creatList('lfmv', lfmvList);
+
+
     }
 
 
@@ -101,7 +140,7 @@
         for (let i = 0; i < this.ftzgList.length; i++) {
             let index = "" + (i * 2 + 1) + "-" + (i * 2 + 2);
             let cope = {
-                key: "https://www.56.com/w11/play_album-aid-14492315_vid-" + this.ftzgList[i] + ".html",
+                url: "https://www.56.com/w11/play_album-aid-14492315_vid-" + this.ftzgList[i] + ".html",
                 name: "《佛陀》第" + index + "集"
             };
             list.push(cope)
