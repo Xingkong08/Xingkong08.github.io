@@ -5,56 +5,41 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>长夜安隐</title>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?e737faa4cd0840b855973e2ca06e5c6b";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    <link rel="stylesheet" href="main.css">
-    <script src="jquery-1.12.0.js"></script>
-    <script src="videolist.js"></script>
+    <script src="repository/js/jquery-1.12.0.js"></script>
+    <style>
+        .h-box{
+            background-color: #f5f1e5;
+            width: 150px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #b6b3ab;
+        }
+
+
+        a {
+            color: black;
+            font-weight: bold;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
-<body class="home">
-<a href="./01说戒品.html">01说戒品</a>
-<a href="./Book/沙门果经/">沙门果经</a>
-<a href="./Book/长部/index.html">长部经典入口</a>
-<a href="http://git.4nianchu.com/dist/#/Reader">更多书籍入口</a>
-<p style="color: dodgerblue">点击标题展开视频列表</p>
-<div class="title" onclick="showList('xzzl')">《玄奘之路》</div>
-<div id="xzzl"></div>
-<div class="title" onclick="showList('dgj')">《佛说稻芉经》</div>
-<div id="dgj"></div>
-<div class="title" onclick="showList('amtj')">《阿弥陀经》</div>
-<div id="amtj"></div>
-<div class="title" onclick="showList('wlsj')">《无量寿经》</div>
-<div id="wlsj"></div>
-<div class="title" onclick="showList('ftzg')">《佛陀》(国语中字)</div>
-<div id="ftzg">
-    <a class="ftzg hide" href="https://pan.baidu.com/s/13kl0iSot6nSenWzQ96dxhw">佛陀_原音中字_提取码：6h3h</a>
-</div>
-<div class="title" onclick="showList('lfmv')">《了凡四训电视剧》</div>
-<div id="lfmv"></div>
-
-
+<body>
+<div class="h-box"><a href="./Book/沙门果经/">沙门果经</a></div>
+<div class="h-box"><a href="http://git.4nianchu.com/dist/#/Reader">经典阅读</a></div>
+<div class="h-box"><a href="http://git.4nianchu.com/dist/#/Video">视频讲座</a></div>
+<div class="h-box"><a href="https://pan.baidu.com/s/13kl0iSot6nSenWzQ96dxhw">佛陀_原音中字_提取码：6h3h</a></div>
 <script type="text/javascript">
-    var wlsjList, amtjList, dgjList = [];
-
     window.onload = function () {
-        initList();
-        getVideo();
-
     };
 
-
     function getVideo() {
-
         let data = new FormData();
         data.append("code", "xzzl");
-
         $.ajax({
             type: 'GET',
             headers: {},
@@ -65,10 +50,7 @@
                 console.log(result)
             }
         });
-
     }
-
-
     function saveVideo(data) {
         console.log(data)
         data = JSON.stringify(data);
@@ -82,85 +64,6 @@
                 console.log(result)
             }
         });
-
-    }
-
-
-    function initList() {
-        wlsjList = getVedioList(4790, 4809, "《无量寿经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=310&videoid=", "");
-        amtjList = getVedioList(4740, 4747, "《阿弥陀经》要义", "http://www.dahangfashi.com/newsshow.asp?classid=7&id=302&videoid=", "");
-        dgjList = getVedioList(4074, 4078, "佛说稻芉经", "http://www.dahangfashi.com/newsshow.asp?classid=6&id=265&videoid=", "");
-        ftzgList = getFtzgList();
-        creatList('xzzl', xzzlList);
-        creatList('dgj', dgjList);
-        creatList('amtj', amtjList);
-        creatList('wlsj', wlsjList);
-        creatList('ftzg', ftzgList);
-        // creatList('lfsx', lfsxList);
-        creatList('lfmv', lfmvList);
-
-
-    }
-
-
-    //根据起始创建视频列表
-    function getVedioList(start, end, title, url, urlend) {
-        let outList = [];
-        for (let i = start; i <= end; i++) {
-            let furl = url + i + urlend;
-            let j = i - start + 1;
-            if (j < 10) {
-                j = "0" + j
-            }
-            let name = title + j
-            outList.push({
-                url: furl,
-                name: name
-            })
-        }
-        return outList;
-    }
-
-
-    //根据列表创建视频列表
-    function creatList(obj, list) {
-        var ronqi = document.getElementById(obj);
-        for (let i = 0; i < list.length; i++) {
-            var va = document.createElement('a');
-            va.setAttribute('href', list[i].url);
-            va.innerText = list[i].name;
-            va.setAttribute('class', obj + " hide")
-            ronqi.appendChild(va);
-        }
-    }
-
-    //创建佛陀传列表
-    function getFtzgList() {
-        let list = [];
-        for (let i = 0; i < this.ftzgList.length; i++) {
-            let index = "" + (i * 2 + 1) + "-" + (i * 2 + 2);
-            let cope = {
-                url: "https://www.56.com/w11/play_album-aid-14492315_vid-" + this.ftzgList[i] + ".html",
-                name: "《佛陀》第" + index + "集"
-            };
-            list.push(cope)
-        }
-        return list;
-    }
-
-    //展示列表 传入class的名字
-    function showList(name) {
-        var list = document.getElementsByClassName(name);
-        var status = list[0].getAttribute('class');
-        var change = containStr(status, 'show') ? ' hide' : ' show'
-        for (let i = 0; i < list.length; i++) {
-            list[i].setAttribute('class', name + change);
-        }
-    }
-
-    //判断obj是否包含字符串str
-    function containStr(obj, str) {
-        return obj.indexOf(str) != -1
     }
 
 </script>
